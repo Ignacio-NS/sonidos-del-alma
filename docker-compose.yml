@@ -1,0 +1,6 @@
+services:
+  sonidosdelalma:
+    image: sonidosdelalma
+    build:
+      context: .
+      dockerfile: ./Dockerfile
