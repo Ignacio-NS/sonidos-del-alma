@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonidos del Alma</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    body {
+      background-color: #f4f1ec;
+      font-family: 'Georgia', serif;
+    }
+    .navbar {
+      background-color: #3e2723 !important;
+    }
+    .navbar-brand, .nav-link {
+      color: #ffcc80 !important;
+    }
+    .nav-link:hover {
+      color: #ffe0b2 !important;
+    }
+    .card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card-img-top {
+      object-fit: cover;
+      height: 250px;
+    }
+    header {
+      background: linear-gradient(to right, #4e342e, #6d4c41);
+      color: #ffe0b2;
+    }
+    h1, h2 {
+      font-family: 'Georgia', serif;
+    }
+    .btn-primary {
+      background-color: #5d4037;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #8d6e63;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-3">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-4" href="index.html">Sonidos del Alma</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">🎸 Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="carrito.html">🛒 Carrito</a></li>
+          <li class="nav-item"><a class="nav-link" href="pago.html">💳 Pago</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="py-5 text-center">
+    <div class="container">
+      <h1 class="display-4">Instrumentos que Inspiran</h1>
+      <p class="lead">Descubre sonidos que mueven el alma.</p>
+    </div>
+  </header>
+
+  <!-- PRODUCTOS -->
+  <section id="productos" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Catálogo de Productos</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/Ocarina.jpg" class="card-img-top" alt="Ocarina">
+            <div class="card-body">
+              <h5 class="card-title">Ocarina de 12 agujeros, profesional alto C</h5>
+              <p class="fw-bold">$38000</p>
+              <button class="btn btn-primary agregar-carrito">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Producto: Arpa -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/Arpa.jpg" class="card-img-top" alt="Arpa">
+            <div class="card-body">
+              <h5 class="card-title">Arpa de madera de caoba lira 15 cuerdas</h5>
+              <p class="fw-bold">$800000</p>
+              <button class="btn btn-primary agregar-carrito">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Producto: Xilofono -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/Xilofono.jpeg" class="card-img-top" alt="Xilófono">
+            <div class="card-body">
+              <h5 class="card-title">Xilófono, 25 notas Glockenspiel</h5>
+              <p class="fw-bold">$34000</p>
+              <button class="btn btn-primary agregar-carrito">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Producto: Ukelele -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/Ukelele.jpg" class="card-img-top" alt="Ukelele">
+            <div class="card-body">
+              <h5 class="card-title">Ranch Ukelele</h5>
+              <p class="fw-bold">$120000</p>
+              <button class="btn btn-primary agregar-carrito">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Producto: Armonica -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/Armonica.jpg" class="card-img-top" alt="Armonica">
+            <div class="card-body">
+              <h5 class="card-title">Armonica Baldassare D10-7</h5>
+              <p class="fw-bold">$16000</p>
+              <button class="btn btn-primary agregar-carrito">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Producto: Banjo -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/Banjo.jpg" class="card-img-top" alt="Banjo">
+            <div class="card-body">
+              <h5 class="card-title">Banjo 8 Cuerdas Electroacustica Meistehaft</h5>
+              <p class="fw-bold">$157000</p>
+              <button class="btn btn-primary agregar-carrito">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto: Batería -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/Bateria.jpg" class="card-img-top" alt="Batería">
+            <div class="card-body">
+              <h5 class="card-title">Batería acústica Tama Imperialstar IP62H6W - Hairline Black</h5>
+              <p class="fw-bold">$879990</p>
+              <button class="btn btn-primary agregar-carrito">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto: Guitarra -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/Guitarra.jpg" class="card-img-top" alt="Guitarra">
+            <div class="card-body">
+              <h5 class="card-title">Tagima Montreal EQ Natural Guitarra Electroacústica</h5>
+              <p class="fw-bold">$359900</p>
+              <button class="btn btn-primary agregar-carrito">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto: Kit-Flautas -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/Kit-Flautas.jpg" class="card-img-top" alt="Kit de Flautas">
+            <div class="card-body">
+              <h5 class="card-title">Kit Flautas folcloricas</h5>
+              <p class="fw-bold">$90000</p>
+              <button class="btn btn-primary agregar-carrito">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto: Piano -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/Piano.jpg" class="card-img-top" alt="Piano">
+            <div class="card-body">
+              <h5 class="card-title">Kurzweil M90 Rosewood Piano</h5>
+              <p class="fw-bold">$879990</p>
+              <button class="btn btn-primary agregar-carrito">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto: Saxofón -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/Trompeta.jpg" class="card-img-top" alt="Trompeta">
+            <div class="card-body">
+              <h5 class="card-title">Trompeta Woma Dorada</h5>
+              <p class="fw-bold">$135990</p>
+              <button class="btn btn-primary agregar-carrito">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto: Violín -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/Violin.jpg" class="card-img-top" alt="Violín">
+            <div class="card-body">
+              <h5 class="card-title">Violín Freeman Classic 4/4 Frv50</h5>
+              <p class="fw-bold">$70090</p>
+              <button class="btn btn-primary agregar-carrito">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
