@@ -1,25 +1,22 @@
-# Imagen base
 FROM ubuntu:latest
-
-# Evitar prompts durante la instalación
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Instalar Apache, PHP y Git
-RUN apt-get update && apt-get install -y \|
+RUN apt-get update && apt-get install -y \
     apache2 \
+    mysql-server \
     php \
     libapache2-mod-php \
-    git \
-    && apt-get clean
+    php-mysql \
+    git
 
-# Clonar el repositorio
-RUN git clone https://github.com/Ignacio-NS/sonidos-del-alma.git /tmp/repo
+RUN git clone https://github.com/ignacio-neira-saldivia/sonidos-del-alma.git /tmp/repo
 
-# Copiar archivos al directorio público de Apache
-RUN rm -rf /var/www/html/* && cp -r /tmp/repo/* /var/www/html/
+RUN rm -rf /var/www/html/* && \
+    mv /tmp/repo/*.html /var/www/html/ && \
+    cp -r /tmp/repo/css /var/www/html/ && \
+    cp -r /tmp/repo/js /var/www/html/ && \
+    cp -r /tmp/repo/img /var/www/html/ && \
+    rm -rf /tmp/repo
 
-# Exponer el puerto del servidor
 EXPOSE 80
-
-# Iniciar Apache al arrancar el contenedor
-CMD ["apachectl", "-D", "FOREGROUND"]
+CMD service mysql start && apache2ctl -D FOREGROUND
